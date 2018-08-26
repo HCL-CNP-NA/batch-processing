@@ -120,6 +120,7 @@ of our PersonItemProcessor you defined earlier, meant to uppercase the data. - w
 This one is aimed at a JDBC destination and automatically gets a copy of the dataSource created by @EnableBatchProcessing. 
 It includes the SQL statement needed to insert a single Person driven by Java bean properties.
 
+
          @Bean
          public Job importUserJob(JobCompletionNotificationListener listener, Step step1) {
              return jobBuilderFactory.get("importUserJob")
