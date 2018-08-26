@@ -129,7 +129,8 @@ It includes the SQL statement needed to insert a single Person driven by Java be
                  .end()
                  .build();
          }
-     
+   
+   
          @Bean
          public Step step1(JdbcBatchItemWriter<Person> writer) {
              return stepBuilderFactory.get("step1")
